@@ -1,13 +1,26 @@
 .headerContainer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: darkcyan;
     width: 100vw;
     position: absolute;
     top: 0;
 }
 
-.titleSpan {
+.navList {
+    width: 33.3vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
     color: whitesmoke;
-    font-weight: bold;
+    transition: opacity 0.5s ease;
+}
+
+.navLink:hover {
+    opacity: 0.5;
+    transition: opacity 0.25s ease;
 }
