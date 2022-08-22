@@ -12,6 +12,9 @@ export const Header = () => {
         <li>
           <NavLink className={styles.navLink} to='/react'>React/TS</NavLink>
         </li>
+        <li>
+          <NavLink className={styles.navLink} to='/'>Home</NavLink>
+        </li>
       </ul>
     </div>
   );

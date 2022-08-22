@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Content } from './Content';
 import { Footer } from './Footer';
+import { App as Home } from 'pdp/App'
 import { Header } from './Header';
 
 import './index.css';
@@ -14,7 +15,7 @@ const App = () => (
       <Routes>
         <Route
           path='/'
-          element={<Content contentMessage="test" />} />
+          element={<Home />} />
 
         <Route
           path='/react'
