@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
@@ -9,11 +9,19 @@ import { Header } from 'homepage/Header';
 
 import './index.css';
 
-const App = () => (
-  <div className="container">
-    <Header />
-    <Content contentMessage="bye" />
-    <Footer />
-  </div>
-);
+const App = () => {
+  const [showHeader, setShowHeader] = useState(false);
+  return (
+    <div className="container">
+      {showHeader && <Header />}
+      <div className="show-header">
+        <button onClick={() => setShowHeader(!showHeader)}>
+          Click to show the Header
+        </button>
+        <Content contentMessage="bye" />
+      </div>
+      <Footer />
+    </div>
+  );
+};
 ReactDOM.render(<App />, document.getElementById('app'));

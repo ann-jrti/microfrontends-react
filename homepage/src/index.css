@@ -6,6 +6,10 @@ body {
 }
 
 .container {
+  height: 100vh;
   display: flex;
+  flex-direction: row;
   font-size: 2rem;
+  align-items: center;
+  justify-content: center;
 }
