@@ -9,7 +9,7 @@ import './index.css';
 const App = () => (
   <div className="container">
     <Header />
-    <Content contentMessage="homepage content" />
+    <Content contentMessage="test" />
     <Footer />
   </div>
 );
