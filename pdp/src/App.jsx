@@ -1,26 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
 
-import { Content } from 'homepage/Content';
-import { Footer } from 'homepage/Footer';
-import { Header } from 'homepage/Header';
-
-import './index.css';
-
 export const App = () => {
-  const [showHeader, setShowHeader] = useState(false);
   return (
     <div className="container">
-      {showHeader && <Header />}
-      <div className="show-header">
-        <button onClick={() => setShowHeader(!showHeader)}>
-          Click to show the Header
-        </button>
-        <Content contentMessage="bye" />
-      </div>
-      <Footer />
+      <h2>This react App is running on port 3001</h2>
     </div>
   );
 };
