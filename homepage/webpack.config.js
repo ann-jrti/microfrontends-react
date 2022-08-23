@@ -45,6 +45,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       remotes: {
         pdp: 'pdp@http://localhost:3001/remoteEntry.js',
+        vue: 'vue@http://localhost:3002/remoteEntry.js',
       },
       exposes: {
         './Header': './src/Header.jsx',

@@ -9,7 +9,7 @@ import { Header } from 'homepage/Header';
 
 import './index.css';
 
-const App = () => {
+export const App = () => {
   const [showHeader, setShowHeader] = useState(false);
   return (
     <div className="container">
