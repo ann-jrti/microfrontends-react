@@ -50,7 +50,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
-        './App': './src/App.vue',
+        './App': './src/bootloader',
       },
       shared: require('./package.json').dependencies,
     }),

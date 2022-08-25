@@ -15,10 +15,9 @@ const App = () => (
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/vue" element={<Vue />} />
         <Route path="/react" element={<Content contentMessage="React" />} />
 
-        <Route path="/vue" element={<Vue />} />
       </Routes>
 
       <Footer />

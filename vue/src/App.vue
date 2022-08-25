@@ -7,7 +7,7 @@ import ComponentExampleVue from './components/ComponentExample.vue';
   <div class="wrapper">
     <HelloWorldVue msg="A hello world Vue App" team="By Frontend team" />
     <div class="appComponentExample-container">
-      <p>Component example in App:</p>
+      <p>{{componentMessage}}</p>
       <ComponentExampleVue />
     </div>
   </div>
@@ -27,3 +27,11 @@ import ComponentExampleVue from './components/ComponentExample.vue';
   width: 20vw;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return { componentMessage: "Component example in App:" };
+  },
+};
+</script>
